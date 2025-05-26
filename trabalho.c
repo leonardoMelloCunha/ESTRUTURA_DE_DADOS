@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-
 void inserir_lista1(int **lista, int *tamanho, int valor) {
     for (int i = 0; i < *tamanho; i++) {
         if ((*lista)[i] == valor)
@@ -10,7 +9,7 @@ void inserir_lista1(int **lista, int *tamanho, int valor) {
     }
     int *temp = realloc(*lista, (*tamanho + 1) * sizeof(int));
     if (!temp) {
-        printf("erro de alocação!");
+        printf("erro na alocacao");
         return;
     }
     *lista = temp;
