@@ -23,7 +23,7 @@ int inserir_lista2(int **lista, int tamanho, int valor) {
             return tamanho;
     int *temp = realloc(*lista, (tamanho + 1) * sizeof(int));
     if (!temp) {
-        printf("Erro da alocacao\n");
+        printf("erro da alocacao");
         return tamanho;
     }
     *lista = temp;
